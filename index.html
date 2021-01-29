@@ -24,6 +24,7 @@
                     class="header-logo-image"
                     src="dist/images/logo.png"
                     alt="Logo"
+                    style=""
                   />
                 </a>
               </h1>
@@ -133,7 +134,10 @@
 
         <section class="features section">
           <div class="container">
-            <div class="features-inner section-inner has-bottom-divider">
+            <div
+              class="features-inner section-inner has-bottom-divider"
+              style="padding-bottom: 25px"
+            >
               <div class="pricing-header text-center">
                 <h2 class="section-title mt-0">Về chúng tôi</h2>
                 <p class="section-paragraph mb-0" style="text-align: justify">
@@ -154,7 +158,7 @@
                   <div class="feature-inner">
                     <div class="feature-icon">
                       <img
-                        src="dist/face-image/TungPham2.png"
+                        src="dist/face-image/TungPham2.jpg"
                         class="profile-image"
                         alt="Feature 01"
                       />
@@ -200,9 +204,10 @@
                   <div class="feature-inner">
                     <div class="feature-icon">
                       <img
-                        src="dist/face-image/avenger.jpg"
+                        src="dist/face-image/groupMember.png"
                         class="profile-image"
                         alt="Feature 03"
+                        style="filter: grayscale(100%)"
                       />
                     </div>
                     <h4 class="feature-title mt-24">... cùng các công sự</h4>
@@ -221,7 +226,10 @@
 
         <section class="features section">
           <div class="container">
-            <div class="features-inner section-inner has-bottom-divider">
+            <div
+              class="features-inner section-inner has-bottom-divider"
+              style="/* padding-top: 25px; */ /* padding-bottom: 25px; */"
+            >
               <div class="pricing-header text-center">
                 <h2 class="section-title mt-0">Các dự án đồng hành</h2>
                 <p class="section-paragraph mb-0">
@@ -359,7 +367,10 @@
 
         <section class="pricing section">
           <div class="container-sm">
-            <div class="pricing-inner section-inner">
+            <div
+              class="pricing-inner section-inner"
+              style="padding-top: 10px; padding-bottom: 25px"
+            >
               <div class="pricing-header text-center">
                 <h2 class="section-title mt-0">Lĩnh vực tham gia</h2>
                 <p class="section-paragraph mb-0" style="text-align: justify">
@@ -444,13 +455,17 @@
 
       <footer class="site-footer">
         <div class="container">
-          <div class="site-footer-inner">
+          <div
+            class="site-footer-inner"
+            style="padding-bottom: 20px; padding-top: 0px"
+          >
             <div class="brand footer-brand">
               <a href="#">
                 <img
                   class="header-logo-image"
                   src="dist/images/logo.png"
                   alt="Logo"
+                  style="height: 100px; width: 100px"
                 />
               </a>
             </div>
@@ -519,18 +534,23 @@
               </li>
             </ul>
             <div class="footer-copyright">
-              © 2021 Bản quyền thuộc về HanoiAi<br />Email: support@hanoiai.com
-              <br />Liên hệ trực tiếp: Phạm Tùng (0984689113)
+              © 2021 Bản quyền thuộc về HanoiAi | Liên hệ trực tiếp: Phạm Tùng
+              (0984689113)
             </div>
           </div>
         </div>
       </footer>
     </div>
-    <button class="float-btn" id="float-btn" onclick="topFunction()">
+    <button
+      class="float-btn"
+      id="float-btn"
+      onclick="topFunction()"
+      style="display: flex"
+    >
       <img src="dist/icon/up.svg" class="float-btn-icon" />
     </button>
     <script>
-    // ----------- script scroll to top --------------------------
+      // ----------- script scroll to top --------------------------
       //Get the button
       var mybutton = document.getElementById("float-btn");
 
@@ -556,8 +576,6 @@
         document.documentElement.scrollTop = 0;
       }
     </script>
-    SS
-
     <script src="dist/js/main.min.js"></script>
   </body>
 </html>
