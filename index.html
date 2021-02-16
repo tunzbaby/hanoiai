@@ -1,595 +1,497 @@
-<html lang="en" class="sr js anime-ready">
+ <!DOCTYPE html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>HanoiAi.com</title>
-    <link rel="shortcut icon" type="image/jpg" href="dist/ico/hanoiai.ico"/>
-    <link
-      href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="dist/css/style.css" />
-    <script src="dist/js/anime.min.js"></script>
-    <script src="dist/js/scrollreveal.min.js"></script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Hanoiai - Dream in pocket</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" >
+    <!-- Icon -->
+    <link rel="stylesheet" href="assets/fonts/line-icons.css">
+    <!-- Owl carousel -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.css">
+
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/nivo-lightbox.css">
+    <!-- Animate -->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- Main Style -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- Responsive Style -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
   </head>
-  <body class="is-boxed has-animations" style="height: 100%">
-    <div class="body-wrap">
-      <header class="site-header">
+  <body>
+
+    <!-- Header Area wrapper Starts -->
+    <header id="header-wrap">
+      <!-- Navbar Start -->
+      <nav class="navbar navbar-expand-md bg-inverse fixed-top scrolling-navbar">
         <div class="container">
-          <div class="site-header-inner">
-            <div class="brand header-brand">
-              <h1 class="m-0">
-                <a href="#">
-                  <img
-                    class="header-logo-image"
-                    src="dist/images/logo2.png"
-                    alt="Logo"
-                    style="height: 100px;"
-                  />
-                </a>
-              </h1>
-            </div>
-          </div>
-        </div>
-      </header>
-
-      <main>
-        <section class="hero">
-          <div class="container">
-            <div class="hero-inner">
-              <div class="hero-copy">
-                <h1 class="hero-title mt-0">
-                  Gia công phần mềm cho các dự án khởi nghiệp
-                </h1>
-                <p class="hero-paragraph" style="text-align: justify">
-                  Với nguồn lực lao động trẻ đầy nhiệt huyết chúng tôi với sứ
-                  mệnh gia công phần mềm cho các dự án Start-Up. Chúng tôi hiểu
-                  rằng khi các bạn bắt đầu xây dựng ước mơ các bạn bắt đầu với
-                  nhiệt huyết trong tim của đội nhóm tuy nhiên nguồn lực kinh tế
-                  còn hạn hẹp, dẫn đến các sản phẩm chưa đủ sức vươn ra thị
-                  trường.
-                </p>
-                <div class="hero-cta">
-                  <a
-                    class="button button-primary"
-                    href="mailto:sales@hanoiai.com?cc=phamtung@outlook.com&amp;subject=Hire%20Us&amp;body=Hi Hanoiai, Chúng tôi muốn thuê bạn"
-                    >Thuê chúng tôi</a
-                  >
-                  <a class="button" href="#">Đọc thêm ...</a>
-                </div>
-              </div>
-              <div class="hero-figure anime-element">
-                <svg
-                  class="placeholder"
-                  width="528"
-                  height="396"
-                  viewBox="0 0 528 396"
-                >
-                  <rect
-                    width="528"
-                    height="396"
-                    style="fill: transparent"
-                  ></rect>
-                </svg>
-                <div
-                  class="hero-figure-box hero-figure-box-01"
-                  data-rotation="45deg"
-                  style="transform: rotate(45deg) scale(1); opacity: 1"
-                ></div>
-                <div
-                  class="hero-figure-box hero-figure-box-02"
-                  data-rotation="-45deg"
-                  style="transform: rotate(-45deg) scale(1); opacity: 1"
-                ></div>
-                <div
-                  class="hero-figure-box hero-figure-box-03"
-                  data-rotation="0deg"
-                  style="transform: rotate(0deg) scale(1); opacity: 1"
-                ></div>
-                <div
-                  class="hero-figure-box hero-figure-box-04"
-                  data-rotation="-135deg"
-                  style="transform: rotate(-135deg) scale(1); opacity: 1"
-                ></div>
-                <div
-                  class="hero-figure-box hero-figure-box-05"
-                  style="
-                    transform: scaleX(1) scaleY(1) perspective(500px)
-                      rotateY(-15deg) rotateX(8deg) rotateZ(-1deg);
-                  "
-                ></div>
-                <div
-                  class="hero-figure-box hero-figure-box-06"
-                  style="
-                    transform: scaleX(1) scaleY(1) perspective(500px)
-                      rotateZ(20deg);
-                  "
-                ></div>
-                <div
-                  class="hero-figure-box hero-figure-box-07"
-                  style="
-                    transform: scaleX(1) scaleY(1) perspective(500px)
-                      rotateZ(20deg);
-                  "
-                ></div>
-                <div
-                  class="hero-figure-box hero-figure-box-08"
-                  data-rotation="-22deg"
-                  style="transform: rotate(-22deg) scale(1); opacity: 1"
-                ></div>
-                <div
-                  class="hero-figure-box hero-figure-box-09"
-                  data-rotation="-52deg"
-                  style="transform: rotate(-52deg) scale(1); opacity: 1"
-                ></div>
-                <div
-                  class="hero-figure-box hero-figure-box-10"
-                  data-rotation="-50deg"
-                  style="transform: rotate(-50deg) scale(1); opacity: 1"
-                ></div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="features section">
-          <div class="container">
-            <div
-              class="features-inner section-inner has-bottom-divider"
-              style="padding-bottom: 25px"
-            >
-              <div class="pricing-header text-center">
-                <h2 class="section-title mt-0">Về chúng tôi</h2>
-                <p class="section-paragraph mb-0" style="text-align: justify">
-                  Chúng tôi tập hợp lại đội nhóm chuyên làm về: AI, IoT, và phần
-                  mềm di động (Android &amp; iOS) để đáp ứng nhu cầu 4.0 cho các
-                  dự án mới thành lập. Nhằm giúp họ xây dựng ước mơ của riêng
-                  mình. Hà Nội Ai tự hào là nhóm các bạn trẻ có nhiều năm kinh
-                  nghiệm thực chiến về 3 lĩnh vực AI, IoT, và phần mềm di động.
-                  Chúng tôi tin có thể biến những dự án demo của bạn thành những
-                  sản phẩm thương mại.
-                </p>
-              </div>
-              <div class="features-wrap">
-                <div
-                  class="feature text-center is-revealing"
-                  style="visibility: visible"
-                >
-                  <div class="feature-inner">
-                    <div class="feature-icon">
-                      <img
-                        src="dist/face-image/cartoon-tungpham.jpg"
-                        class="profile-image"
-                        alt="Feature 01"
-                      />
-                    </div>
-                    <h4 class="feature-title mt-24">PHẠM TÙNG</h4>
-                    <p class="text-sm mb-0">(CEO &amp; Founder)</p>
-                    <p class="text-sm mb-0" style="text-align: justify">
-                      Với sự lắng nghe, chi tiết và chịu khó thấu hiểu khách hàng, tôi luôn tìm cách hiểu rõ nhất
-                      nhu cầu của bạn cho từng dự án cụ thể. Mang cả trái tim đồng hành cùng các dự án khởi nghiệp. Với kinh nghiệm
-                      quản lý dự án của mình trong các lĩnh vực phần mềm, tôi tự tin rằng có thể giúp bạn xây dựng nên những phần mềm chất lượng và thực tế.
-                    </p>
-                  </div>
-                </div>
-
-                <div
-                  class="feature text-center is-revealing"
-                  style="visibility: visible"
-                >
-                  <div class="feature-inner">
-                    <div class="feature-icon">
-                      <img
-                        src="dist/face-image/cartoon-Thao.jpg"
-                        class="profile-image"
-                        alt="Feature 02"
-                      />
-                    </div>
-                    <h4 class="feature-title mt-24">LÊ TRỌNG THẢO</h4>
-                    <p class="text-sm mb-0">(CTO &amp; Co-founder)</p>
-                    <p class="text-sm mb-0" style="text-align: justify">
-                      Trong một dự án dù lớn hay nhỏ về phần mềm thì không thể thiếu người hiểu rõ và sâu về công nghệ để có thể tư vấn
-                      cho bạn & dự án của bạn giải pháp tốt nhất. Bằng kinh nghiệm thực tế, thực chiến cho hàng loạt các dự án đã trải qua
-                      trong mảng ngân hàng, viễn thông, dịch vụ công. Tôi luôn đem giải pháp tối ưu về chi phí và tính năng đồng hành cùng bạn.
-                      Hãy để các kinh nghiệm thực chiến của tôi giúp bạn tích kiệm thời gian & công sức.
-                    </p>
-                  </div>
-                </div>
-
-                <div
-                  class="feature text-center is-revealing"
-                  style="visibility: visible"
-                >
-                  <div class="feature-inner">
-                    <div class="feature-icon">
-                      <img
-                        src="dist/face-image/teamwork.jpg"
-                        class="profile-image"
-                        alt="Feature 03"
-                      />
-                    </div>
-                    <h4 class="feature-title mt-24">... cùng các cộng sự</h4>
-                    <p class="text-sm mb-0">(AI, IoT, Mobile)</p>
-
-                    <p class="text-sm mb-0" style="text-align: justify">
-                      Đồng hành cùng chúng tôi là các bạn trẻ đầy nhiệt huyết,
-                      đam mê trong các lĩnh vực phần mềm di động, AI và IoT.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="features section">
-          <div class="container">
-            <div
-              class="features-inner section-inner has-bottom-divider"
-              style="/* padding-top: 25px; */ /* padding-bottom: 25px; */"
-            >
-              <div class="pricing-header text-center">
-                <h2 class="section-title mt-0">Các dự án đồng hành</h2>
-                <p class="section-paragraph mb-0">
-                  Từ năm 2021 -&gt; Tương lai
-                </p>
-              </div>
-              <div class="features-wrap">
-
-                <div class="feature text-center is-revealing"
-                  style="visibility: visible">
-                  <div class="feature-inner">
-                    <div class="feature-icon">
-                      <img
-                        src="dist/images/aidi_home.png"
-                        alt="Feature 02"
-                        width="170"
-                        height="170"
-                        style="filter: grayscale(100%)"
-                        width="150px"
-                      />
-                    </div>
-                    <p class="text-sm mb-0" style="text-align: justify">
-                      Hệ sinh thái "Thay đổi thói quen tích cực" kết hợp IoT và phần mềm di động.
-                    </p>
-                  </div>
-                </div>
-
-                <div
-                  class="feature text-center is-revealing"
-                  style="visibility: visible"
-                >
-                  <div class="feature-inner">
-                    <div class="feature-icon">
-                      <img
-                        src="dist/images/drinpo.png"
-                        alt="Feature 01"
-                        style="filter: grayscale(100%)"
-                        width="150px"
-                      />
-                    </div>
-                    <h4 class="feature-title mt-24"></h4>
-                    <p class="text-sm mb-0" style="text-align: justify">
-                      Phần mềm di động phát hiện ngã dành cho người già.
-                      Tăng cường nguy cơ phát hiện đột quỵ. Sản phẩm vì cộng động
-                      ra mắt năm 2021.
-                    </p>
-                  </div>
-                </div>
-
-                <div
-                  class="feature text-center is-revealing"
-                  style="visibility: visible"
-                >
-                  <div class="feature-inner">
-                    <div class="feature-icon">
-                      <img
-                        src="dist/images/dh_giao_thong_van_tai.png"
-                        alt="Feature 03"
-                        style="filter: grayscale(100%)"
-                      />
-                    </div>
-                    <h4 class="feature-title mt-24"></h4>
-                    <p class="text-sm mb-0" style="text-align: justify">
-                      Đồng hành cùng các bạn sinh viên trong các dự án thực tế.
-                      Tham gia đào tạo, huấn luyện thế hệ trẻ sinh viên tham gia vào các cuộc thi
-                      khởi nghiệp ngay trên ghế nhà trường. Ứng dụng vào các lĩnh vực IoT, hạ tầng mạng
-                      & và trí tuệ nhân tạo.
-                    </p>
-                  </div>
-                </div>
-
-                <div
-                  class="feature text-center is-revealing"
-                  style="visibility: visible"
-                >
-                  <div class="feature-inner">
-                    <div class="feature-icon">
-                      <img
-                        src="dist/images/hubdetana.png"
-                        alt="Feature 05"
-                        style="filter: grayscale(100%)"
-                      />
-                    </div>
-                    <h4 class="feature-title mt-24"></h4>
-                    <p class="text-sm mb-0" style="text-align: justify">
-                      Xây dựng phần mềm di động tích điểm cho khách hàng quen. Ứng dụng công nghệ dữ liệu đám mây
-                      giúp cho quán cafe nhỏ quản lý dòng tiền, khách hàng và số liệu báo cáo từ xa. Nâng cao chất lượng
-                      dịch vụ của các quán cafe nhỏ & vừa.
-                    </p>
-                  </div>
-                </div>
-
-                <div
-                  class="feature text-center is-revealing"
-                  style="visibility: visible"
-                >
-                  <div class="feature-inner">
-                    <div class="feature-icon">
-                      <img
-                        src="dist/images/feature-icon-04.svg"
-                        alt="Feature 04"
-                        style="filter: grayscale(100%)"
-                      />
-                    </div>
-                    <h4 class="feature-title mt-24">
-                      BV Y HỌC CỔ TRUYỀN
-                    </h4>
-                    <p class="text-sm mb-0" style="text-align: justify">
-                      Kết hợp cùng các y bác sỹ có chuyên môn đào tạo tại nước ngoài cho các dự án số hóa
-                      sức khỏe, ứng dụng AI cho các dự án sức khỏe nhằm nâng cao khả năng phát hiện các bệnh lý
-                      cơ bản trong tương lai.
-                    </p>
-                  </div>
-                </div>
-
-                <div
-                  class="feature text-center is-revealing"
-                  style="visibility: visible"
-                >
-                  <div class="feature-inner">
-                    <div class="feature-icon">
-                    </div>
-                    <h4 class="feature-title mt-24">.. cùng các dự án nhỏ</h4>
-                    <p class="text-sm mb-0" style="text-align: justify">
-                      Hướng đến các doanh nghiệp mới khởi sự, chúng tôi làm tất
-                      cả mọi yêu cầu để các bạn tiến đến thành công
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="pricing section">
-          <div class="container-sm">
-            <div
-              class="pricing-inner section-inner"
-              style="padding-top: 10px; padding-bottom: 25px"
-            >
-              <div class="pricing-header text-center">
-                <h2 class="section-title mt-0">Lĩnh vực tham gia</h2>
-                <p class="section-paragraph mb-0" style="text-align: justify">
-                  Với mỗi dự án tham dự chúng tôi đặt yêu cầu chi tiết lên hàng
-                  đầu. Thấu hiểu khách hàng. Tận tâm và luôn hỗ trợ kể cả khi
-                  kết thúc dự án. Chúng tôi hiểu rằng, các khách hàng cũ sẽ là
-                  người mang lại thành công lâu bền cho Hanoiai.
-                </p>
-              </div>
-              <div class="pricing-tables-wrap">
-                <div class="pricing-table">
-                  <div
-                    class="pricing-table-inner is-revealing"
-                    style="visibility: visible"
-                  >
-                    <div class="pricing-table-main">
-                      <div
-                        class="pricing-table-features-title text-xs pt-24 pb-24"
-                      >
-                        Bạn quan tâm tới lĩnh vực là gì?
-                      </div>
-                      <ul class="pricing-table-features list-reset text-xs">
-                        <li>
-                          <span
-                            >Phần mềm di động<br />
-                            - Native App: Android &amp; iOS<br />
-                            - Cross-platform: React Native, Flutter<br/>
-
-                            <br
-                          /></span>
-                        </li>
-                        <li>
-                          <span
-                            > Giải pháp doanh nghiệp:<br/>
-                            - Giám sát hành trình, đặt xe<br />
-                            - Xu hướng 2021: Video Call, Chat<br/>
-                            <br
-                          /></span>
-                        </li>
-
-                        <li>
-                          <span
-                            >Trí tuệ nhân tạo<br />
-                            - Nhận dạng hình ảnh<br />
-                            - Nhận dạng hành vi</span
-                          >
-                        </li>
-                        <li>
-                          <span
-                            >Xây dựng giải pháp về Internet of thing (IoT)</span
-                          >
-                        </li>
-                        <li>
-                          <span
-                            >Gia công các sản phẩm Demo thành sản phẩm thương
-                            mại</span
-                          >
-                        </li>
-
-                        <li>
-                          <span
-                            > Thiết kế phần mềm đa nền tảng quản lý kho, tài chính cho F&B ứng dụng công nghệ AI</span
-                          >
-                        </li>
-
-                      </ul>
-                    </div>
-                    <div class="pricing-table-cta mb-8">
-                      <a
-                        class="button button-primary button-shadow button-block"
-                        href="mailto:sales@hanoiai.com?cc=phamtung@outlook.com&amp;subject=Yêu%20Cầu&amp;body=Hi Hanoiai, Chúng tôi muốn gửi yêu cầu dự án"
-                        >Gửi yêu cầu dự án</a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="cta section">
-          <div class="container">
-            <div class="cta-inner section-inner">
-              <h3 class="section-title mt-0">
-                Nếu bạn vẫn còn băn khoăn, hãy liên hệ với chúng tôi.
-              </h3>
-              <div class="cta-cta">
-                <a
-                  class="button button-primary button-wide-mobile"
-                  href="mailto:sales@hanoiai.com?cc=phamtung@outlook.com&amp;subject=Tư%20Vấn&amp;body=Hi Hanoiai, Chúng tôi muốn tư vấn chi tiết hơn."
-                  >Nhận tư vấn</a
-                >
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
-
-      <footer class="site-footer">
-        <div class="container">
-          <div
-            class="site-footer-inner"
-            style="padding-bottom: 20px; padding-top: 0px"
-          >
-            <div class="brand footer-brand">
-              <a href="#">
-                <img
-                  class="header-logo-image"
-                  src="dist/images/logo2.png"
-                  alt="Logo"
-                  style="height: 100px;"
-                />
-              </a>
-            </div>
-            <ul class="footer-links list-reset">
-              <li>
-                <a href="#">Liên hệ</a>
-              </li>
-              <li>
-                <a href="#">Về chúng tôi</a>
-              </li>
-              <li>
-                <a href="#">Các dự án</a>
-              </li>
-              <li>
-                <a href="#">Hỗ trợ</a>
-              </li>
-            </ul>
-            <ul
-              class="footer-social-links list-reset"
-              style="visibility: hidden"
-            >
-              <li>
-                <a href="#">
-                  <span class="screen-reader-text">Facebook</span>
-                  <svg
-                    width="16"
-                    height="16"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M6.023 16L6 9H3V6h3V4c0-2.7 1.672-4 4.08-4 1.153 0 2.144.086 2.433.124v2.821h-1.67c-1.31 0-1.563.623-1.563 1.536V6H13l-1 3H9.28v7H6.023z"
-                      fill="#0270D7"
-                    ></path>
-                  </svg>
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <a href="index.html" class="navbar-brand"><img src="assets/img/logo2.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="lni-menu"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto w-100 justify-content-end clearfix">
+              <li class="nav-item active">
+                <a class="nav-link" href="#hero-area">
+                  Giới thiệu
                 </a>
               </li>
-              <li>
-                <a href="#">
-                  <span class="screen-reader-text">Twitter</span>
-                  <svg
-                    width="16"
-                    height="16"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M16 3c-.6.3-1.2.4-1.9.5.7-.4 1.2-1 1.4-1.8-.6.4-1.3.6-2.1.8-.6-.6-1.5-1-2.4-1-1.7 0-3.2 1.5-3.2 3.3 0 .3 0 .5.1.7-2.7-.1-5.2-1.4-6.8-3.4-.3.5-.4 1-.4 1.7 0 1.1.6 2.1 1.5 2.7-.5 0-1-.2-1.5-.4C.7 7.7 1.8 9 3.3 9.3c-.3.1-.6.1-.9.1-.2 0-.4 0-.6-.1.4 1.3 1.6 2.3 3.1 2.3-1.1.9-2.5 1.4-4.1 1.4H0c1.5.9 3.2 1.5 5 1.5 6 0 9.3-5 9.3-9.3v-.4C15 4.3 15.6 3.7 16 3z"
-                      fill="#0270D7"
-                    ></path>
-                  </svg>
+              <li class="nav-item">
+                <a class="nav-link" href="#features">
+                  Lĩnh vực
                 </a>
               </li>
-              <li>
-                <a href="#">
-                  <span class="screen-reader-text">Google</span>
-                  <svg
-                    width="16"
-                    height="16"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M7.9 7v2.4H12c-.2 1-1.2 3-4 3-2.4 0-4.3-2-4.3-4.4 0-2.4 2-4.4 4.3-4.4 1.4 0 2.3.6 2.8 1.1l1.9-1.8C11.5 1.7 9.9 1 8 1 4.1 1 1 4.1 1 8s3.1 7 7 7c4 0 6.7-2.8 6.7-6.8 0-.5 0-.8-.1-1.2H7.9z"
-                      fill="#0270D7"
-                    ></path>
-                  </svg>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">
+                  Tôn chỉ thiết kế
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#testimonial">
+                  Về chúng tôi
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">
+                  Liên hệ
                 </a>
               </li>
             </ul>
-            <div class="footer-copyright">
-              © 2021 Bản quyền thuộc về HanoiAi
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar End -->
+
+      <!-- Hero Area Start -->
+      <div id="hero-area" class="hero-area-bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
+              <div class="contents">
+                <h2 class="head-title">Gia công phần mềm cho các dự án khởi nghiệp</h2>
+                <p>Với nguồn lực lao động trẻ đầy nhiệt huyết chúng tôi với sứ mệnh gia công phần mềm cho các dự án Start-Up. Chúng tôi hiểu rằng khi các bạn bắt đầu xây dựng ước mơ các bạn bắt đầu với nhiệt huyết trong tim của đội nhóm tuy nhiên nguồn lực kinh tế còn hạn hẹp, dẫn đến các sản phẩm chưa đủ sức vươn ra thị trường.</p>
+                <div class="header-button">
+                  <a rel="nofollow" href="mailto:sales@hanoiai.com?cc=phamtung@outlook.com&amp;subject=Hire%20Us&amp;body=Hi Hanoiai, Chúng tôi muốn thuê bạn" class="btn btn-common">Thuê chúng tôi</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
+              <div class="intro-img">
+                <img class="img-fluid" src="assets/img/intro-mobile.png" alt="">
+              </div>
             </div>
           </div>
         </div>
-      </footer>
+      </div>
+      <!-- Hero Area End -->
+
+    </header>
+    <!-- Header Area wrapper End -->
+
+    <!-- Features Section Start -->
+    <section id="features" class="section-padding">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Lĩnh vực tham gia:</h2>
+          <div class="shape wow fadeInDown" data-wow-delay="0.3s"></div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+            <div class="content-left">
+              <div class="box-item wow fadeInLeft" data-wow-delay="0.3s">
+                <span class="icon">
+                  <i class="lni-rocket"></i>
+                </span>
+                <div class="text">
+                  <h4>Phần mềm di động</h4>
+                  <p>- Native App: Android & iOS<br>
+                      - Cross-platform: React Native, Flutter</p>
+                </div>
+              </div>
+              <div class="box-item wow fadeInLeft" data-wow-delay="0.6s">
+                <span class="icon">
+                  <i class="lni-laptop-phone"></i>
+                </span>
+                <div class="text">
+                  <h4>Trí tuệ nhân tạo</h4>
+                  <p>- Nhận dạng hình ảnh<br>
+                      - Nhận dạng hành vi</p>
+                </div>
+              </div>
+              <div class="box-item wow fadeInLeft" data-wow-delay="0.9s">
+                <span class="icon">
+                  <i class="lni-cog"></i>
+                </span>
+                <div class="text">
+                  <h4>Giải pháp IoT</h4>
+                  <p>Gia công các sản phẩm Demo thành sản phẩm thương mại</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+            <div class="show-box wow fadeInUp" data-wow-delay="0.3s">
+              <img src="assets/img/feature/intro-mobile.png" alt="">
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+            <div class="content-right">
+              <div class="box-item wow fadeInRight" data-wow-delay="0.3s">
+                <span class="icon">
+                  <i class="lni-leaf"></i>
+                </span>
+                <div class="text">
+                  <h4>Phần mềm đa nền tảng</h4>
+                  <p>Thiết kế phần mềm đa nền tảng (Web, di động, Windows) quản lý kho, tài chính cho F&B ứng dụng công nghệ AI</p>
+                </div>
+              </div>
+              <div class="box-item wow fadeInRight" data-wow-delay="0.6s">
+                <span class="icon">
+                  <i class="lni-layers"></i>
+                </span>
+                <div class="text">
+                  <h4>Giải pháp doanh nghiệp</h4>
+                  <p>- Giám sát hành trình, đặt xe<br>
+                      - Xu hướng 2021: Video Call, Chat
+                  </p>
+                </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Features Section End -->
+
+    <!-- About Section start -->
+    <div class="about-area section-padding bg-gray">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 col-xs-12 info">
+            <div class="about-wrapper wow fadeInLeft" data-wow-delay="0.3s">
+              <div>
+                <div class="site-heading">
+                  <p class="mb-3">Cam kết phụng sự khách hàng</p>
+                  <h2 class="section-title">Sứ mệnh</h2>
+                </div>
+                <div class="content">
+                  <p>
+                    Với sự lắng nghe, chi tiết và chịu khó thấu hiểu khách hàng, tôi luôn tìm cách hiểu rõ nhất nhu cầu của bạn cho từng dự án cụ thể. Mang cả trái tim đồng hành cùng các dự án khởi nghiệp. Với kinh nghiệm quản lý dự án của mình trong các lĩnh vực phần mềm, tôi tự tin rằng có thể giúp bạn xây dựng nên những phần mềm chất lượng và thực tế.
+                  </p>
+                  <p>
+                    Trong một dự án dù lớn hay nhỏ về phần mềm thì không thể thiếu người hiểu rõ và sâu về công nghệ để có thể tư vấn cho bạn & dự án của bạn giải pháp tốt nhất. Bằng kinh nghiệm thực tế, thực chiến cho hàng loạt các dự án đã trải qua trong mảng ngân hàng, viễn thông, dịch vụ công. Tôi luôn đem giải pháp tối ưu về chi phí và tính năng đồng hành cùng bạn. Hãy để các kinh nghiệm thực chiến của tôi giúp bạn tích kiệm thời gian & công sức.
+                  </p>
+                  <a href="#" class="btn btn-common mt-3">Tìm hiểu thêm....</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 col-xs-12 wow fadeInRight" data-wow-delay="0.3s">
+            <img class="img-fluid" src="assets/img/about/img-1.png" alt="" >
+          </div>
+        </div>
+      </div>
     </div>
-    <button
-      class="float-btn"
-      id="float-btn"
-      onclick="topFunction()"
-      style="display: flex"
-    >
-      <img src="dist/icon/up.svg" class="float-btn-icon" />
-    </button>
-    <script>
-      // ----------- script scroll to top --------------------------
-      //Get the button
-      var mybutton = document.getElementById("float-btn");
+    <!-- About Section End -->
 
-      // When the user scrolls down 20px from the top of the document, show the button
-      window.onscroll = function () {
-        scrollFunction();
-      };
+    <!-- Services Section Start -->
+    <section id="services" class="section-padding">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Tôn chỉ thiết kế phần mềm & phần cứng:</h2>
+          <div class="shape wow fadeInDown" data-wow-delay="0.3s"></div>
+        </div>
+        <div class="row">
+          <!-- Services item -->
+          <div class="col-md-6 col-lg-4 col-xs-12">
+            <div class="services-item wow fadeInRight" data-wow-delay="0.3s">
+              <div class="icon">
+                <i class="lni-cog"></i>
+              </div>
+              <div class="services-content">
+                <h3><a href="#">Dễ dàng sử dụng</a></h3>
+                <p>Đây là vấn đề được chúng tôi cân nhắc đầu tiên khi bắt đầu thiết kế phần mềm. Vì phần mềm với nhiều tính năng hữu ích tuy nhiên luôn luôn phải dễ dàng sử dụng.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Services item -->
+          <div class="col-md-6 col-lg-4 col-xs-12">
+            <div class="services-item wow fadeInRight" data-wow-delay="0.6s">
+              <div class="icon">
+                <i class="lni-stats-up"></i>
+              </div>
+              <div class="services-content">
+                <h3><a href="#">Thiết kế đẹp, hiện đại</a></h3>
+                <p>Lựa chọn những gam màu tinh tế vừa mắt. Chúng tôi coi phần mềm như một tác phẩm nghệ thuật cần được chú tâm.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Services item -->
+          <div class="col-md-6 col-lg-4 col-xs-12">
+            <div class="services-item wow fadeInRight" data-wow-delay="0.9s">
+              <div class="icon">
+                <i class="lni-users"></i>
+              </div>
+              <div class="services-content">
+                <h3><a href="#">Dễ dàng tích hợp các tính năng</a></h3>
+                <p>Những tính năng thêm phát triển trong tương lai chúng tôi luôn hỏi khách để đưa ra các yêu cầu mở cho việc tích hợp về sau, giúp đối tác không cần phải xây lại CORE phần mềm.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Services item -->
+          <div class="col-md-6 col-lg-4 col-xs-12">
+            <div class="services-item wow fadeInRight" data-wow-delay="1.2s">
+              <div class="icon">
+                <i class="lni-layers"></i>
+              </div>
+              <div class="services-content">
+                <h3><a href="#">Chi tiết tôi ưu về UI/UX</a></h3>
+                <p>Với phần mềm thì người dùng được đặt lên hàng đầu, nút ấn, dòng chảy chương trình được cân nhắc kỹ càng cho từng chỗ đặt. Khiến cho phần mềm có tương tác người dùng tốt nhất.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Services item -->
+          <div class="col-md-6 col-lg-4 col-xs-12">
+            <div class="services-item wow fadeInRight" data-wow-delay="1.5s">
+              <div class="icon">
+                <i class="lni-mobile"></i>
+              </div>
+              <div class="services-content">
+                <h3><a href="#">Phần cứng IoT</a></h3>
+                <p>Đảm bảo rằng tất cả các tính năng khách hàng diễn tả đều được bày tỏ đúng nhất cho người dùng</p>
+              </div>
+            </div>
+          </div>
+          <!-- Services item -->
+          <div class="col-md-6 col-lg-4 col-xs-12">
+            <div class="services-item wow fadeInRight" data-wow-delay="1.8s">
+              <div class="icon">
+                <i class="lni-rocket"></i>
+              </div>
+              <div class="services-content">
+                <h3><a href="#">Giao diện người dùng thân thiện</a></h3>
+                <p>Ut maximus enim dolor. Aenean auctor risus eget tincidunt lobortis. Donec tincidunt bibendum gravida. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Services Section End -->
 
-      function scrollFunction() {
-        if (
-          document.body.scrollTop > 20 ||
-          document.documentElement.scrollTop > 20
-        ) {
-          mybutton.style.display = "flex";
-        } else {
-          mybutton.style.display = "none";
-        }
-      }
 
-      // When the user clicks on the button, scroll to the top of the document
-      function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-      }
-    </script>
-    <script src="dist/js/main.min.js"></script>
+    <!-- Call To Action Section Start -->
+    <section id="cta" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-xs-12 wow fadeInLeft" data-wow-delay="0.3s">
+            <div class="cta-text">
+              <h4>Nếu bạn còn băn khoăn đừng ngại ngần liên hệ ngay với chúng tôi</h4>
+              <h5><p>Hãy để kinh nghiệm của chúng tôi trong lĩnh vực phần mềm làm bạn hài lòng</p></h5>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-xs-12 text-right wow fadeInRight" data-wow-delay="0.3s">
+          </br><a rel="nofollow" href="mailto:sales@hanoiai.com?cc=phamtung@outlook.com&amp;subject=Tư%20Vấn&amp;body=Hi Hanoiai, Chúng tôi muốn tư vấn chi tiết hơn." class="btn btn-common">Nhận tư vấn ngay</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Call To Action Section Start -->
+
+    <!-- Testimonial Section Start -->
+    <section id="testimonial" class="testimonial section-padding">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div id="testimonials" class="owl-carousel wow fadeInUp" data-wow-delay="1.2s">
+              <div class="item">
+                <div class="testimonial-item">
+                  <div class="img-thumb">
+                    <img src="assets/img/testimonial/cartoon-tungpham.jpg" alt="">
+                  </div>
+                  <div class="info">
+                    <h2><a href="#">Phạm Tùng</a></h2>
+                    <h3><a href="#">CEO & Founder</a></h3>
+                  </div>
+                  <div class="content">
+                    <p class="description">Với sự lắng nghe, chi tiết và chịu khó thấu hiểu khách hàng, tôi luôn tìm cách hiểu rõ nhất nhu cầu của bạn cho từng dự án cụ thể. Mang cả trái tim đồng hành cùng các dự án khởi nghiệp. Với kinh nghiệm quản lý dự án của mình trong các lĩnh vực phần mềm, tôi tự tin rằng có thể giúp bạn xây dựng nên những phần mềm chất lượng và thực tế.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimonial-item">
+                  <div class="img-thumb">
+                    <img src="assets/img/testimonial/img2.jpg" alt="">
+                  </div>
+                  <div class="info">
+                    <h2><a href="#">Lê Trọng Thảo</a></h2>
+                    <h3><a href="#">CTO & Co-founder</a></h3>
+                  </div>
+                  <div class="content">
+                    <p class="description">Trong một dự án dù lớn hay nhỏ về phần mềm thì không thể thiếu người hiểu rõ và sâu về công nghệ để có thể tư vấn cho bạn & dự án của bạn giải pháp tốt nhất. Bằng kinh nghiệm thực tế, thực chiến cho hàng loạt các dự án đã trải qua trong mảng ngân hàng, viễn thông, dịch vụ công. Tôi luôn đem giải pháp tối ưu về chi phí và tính năng đồng hành cùng bạn. Hãy để các kinh nghiệm thực chiến của tôi giúp bạn tích kiệm thời gian & công sức.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimonial-item">
+                  <div class="img-thumb">
+                    <img src="assets/img/testimonial/img3.jpg" alt="">
+                  </div>
+                  <div class="info">
+                    <h2><a href="#">Các cộng sự</a></h2>
+                    <h3><a href="#">IoT, Ai, Mobile</a></h3>
+                  </div>
+                  <div class="content">
+                    <p class="description">Đồng hành cùng chúng tôi là các bạn trẻ đầy nhiệt huyết, đam mê trong các lĩnh vực phần mềm di động, AI và IoT.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial Section End -->
+
+    <!-- Contact Section Start -->
+    <section id="contact" class="section-padding bg-gray">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Liên hệ</h2>
+          <div class="shape wow fadeInDown" data-wow-delay="0.3s"></div>
+        </div>
+        <div class="row contact-form-area wow fadeInUp" data-wow-delay="0.3s">
+          <div class="col-lg-7 col-md-12 col-sm-12">
+    <!-- Call To Action Section Start -->
+    <section id="cta" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-xs-12 wow fadeInLeft" data-wow-delay="0.3s">
+            <div class="cta-text">
+              <h4>Với chúng tôi mỗi yêu cầu của bạn đều quý giá</h4>
+              <h5>Bạn hãy liên lạc với chúng tôi để chúng tôi được phục vụ bạn tận tình nhất</h5>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-xs-12 text-right wow fadeInRight" data-wow-delay="0.3s">
+          </br><a rel="nofollow" href="mailto:sales@hanoiai.com?cc=phamtung@outlook.com&amp;subject=Yêu%20Cầu&amp;body=Hi Hanoiai, Chúng tôi muốn gửi yêu cầu dự án" class="btn btn-common">Gửi yêu cầu dự án</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Call To Action Section Start -->
+          </div>
+          <div class="col-lg-5 col-md-12 col-xs-12">
+            <div class="map">
+              <object style="border:0; height: 280px; width: 100%;" data="https://www.google.com/maps/dir//Hanoi+Office+-+L%C3%AA+V%C4%83n+L%C6%B0%C6%A1ng,+T%E1%BA%A7ng+5+Golden+Palm,+21+L%C3%AA+V%C4%83n+L%C6%B0%C6%A1ng,+Nh%C3%A2n+Ch%C3%ADnh,+Thanh+Xu%C3%A2n,+H%C3%A0+N%E1%BB%99i+11415/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x3135addc0a4ff2b7:0x65c2595c8702cddf?sa=X&ved=2ahUKEwj794bXx-7uAhUcwosBHUWNC9sQ48ADMAB6BAgGED8"></object>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- Footer Section Start -->
+    <footer id="footer" class="footer-area section-padding">
+      <div class="container">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
+              <div class="widget">
+                <h3 class="footer-logo">
+                <div class="textwidget">
+                  <p>Kết nôi với chúng tôi:</p>
+                </div>
+                <div class="social-icon">
+                  <a class="facebook" href="#"><i class="lni-facebook-filled"></i></a>
+                  <a class="twitter" href="#"><i class="lni-twitter-filled"></i></a>
+                  <a class="instagram" href="#"><i class="lni-instagram-filled"></i></a>
+                  <a class="linkedin" href="#"><i class="lni-linkedin-filled"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+              <h3 class="footer-titel">Lĩnh vực</h3>
+              <ul class="footer-link">
+                <li><a href="#features">Gia công phần mềm</a></li>
+                <li><a href="#features">Phần mềm cho di động</a></li>
+                <li><a href="#features">Camera Ai</a></li>
+                <li><a href="#features">Giải pháp IoT</a></li>
+                <li><a href="#features">Giải pháp doanh nghiệp</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+              <h3 class="footer-titel">Sơ đồ trang</h3>
+              <ul class="footer-link">
+                <li><a href="#hero-area">Giới thiệu</a></li>
+                <li><a href="#features">Lĩnh vực</a></li>
+                <li><a href="#services">Tôn chỉ thiết kế</a></li>
+                <li><a href="#testimonial">Về chúng tôi</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+              <h3 class="footer-titel">Contact</h3>
+              <ul class="address">
+                <li>
+                  <a href="#"><i class="lni-map-marker"></i>Tầng 5 Golden Palm, 21 Lê Văn Lương, Nhân Chính, Thanh Xuân, Hà Nội</a>
+                </li>
+                <li>
+                  <a href="#"><i class="lni-phone-handset"></i>0984-689-113</a>
+                </li>
+                <li>
+                  <a href="#"><i class="lni-envelope"></i>sales@hanoiai.com</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="copyright-content">
+                <p>© 2021 Bản quyền thuộc về HanoiAi</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Go to Top Link -->
+    <a href="#" class="back-to-top">
+    	<i class="lni-arrow-up"></i>
+    </a>
+
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="loader" id="loader-1"></div>
+    </div>
+    <!-- End Preloader -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/js/jquery-min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/jquery.nav.js"></script>
+    <script src="assets/js/scrolling-nav.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
   </body>
 </html>

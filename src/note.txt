@@ -1,3 +1,0 @@
-<a href="mailto:phamtung@outlook.com?cc=support@hanoiai.com, support@hanoiai.com, me@mysite.comm&subject=Hire%20Uss&body=Hi Hanoiai, Chúng tôi muốn thuê bạn">Email Us</a>
-
-mailto:phamtung@outlook.com?cc=support@hanoiai.com&subject=Tư%20Vấn&body=Hi Hanoiai, Chúng tôi muốn tư vấn chi tiết hơn.
