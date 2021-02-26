@@ -1,114 +1,47 @@
-(function($) {
-  
-  "use strict";  
 
-  $(window).on('load', function() {
+(function() {
 
-  /*Page Loader active
-  ========================================================*/
-  $('#preloader').fadeOut();
+    /* ====================
+    Preloader
+    ======================= */
+	window.onload = function () {
+		window.setTimeout(fadeout, 300);
+	}
 
-  // Sticky Nav
-    $(window).on('scroll', function() {
-        if ($(window).scrollTop() > 50) {
-            $('.scrolling-navbar').addClass('top-nav-collapse');
+	function fadeout() {
+		document.querySelector('.preloader').style.opacity = '0';
+		document.querySelector('.preloader').style.display = 'none';
+	}
+
+    // ============= sticky menu
+    window.onscroll = function () {
+        var header_navbar = document.querySelector(".hero-section-wrapper .header");
+        var sticky = header_navbar.offsetTop;
+
+        if (window.pageYOffset > sticky) {
+            header_navbar.classList.add("sticky");
         } else {
-            $('.scrolling-navbar').removeClass('top-nav-collapse');
+            header_navbar.classList.remove("sticky");
         }
-    });
 
-    // one page navigation 
-    $('.navbar-nav').onePageNav({
-      currentClass: 'active'
-    });
-
-    /* Auto Close Responsive Navbar on Click
-    ========================================================*/
-    function close_toggle() {
-        if ($(window).width() <= 768) {
-            $('.navbar-collapse a').on('click', function () {
-                $('.navbar-collapse').collapse('hide');
-            });
-        }
-        else {
-            $('.navbar .navbar-inverse a').off('click');
-        }
-    }
-    close_toggle();
-    $(window).resize(close_toggle);
-
-    /* WOW Scroll Spy
-    ========================================================*/
-     var wow = new WOW({
-      //disabled for mobile
-        mobile: false
-    });
-
-    wow.init();
-
-    /* 
-    CounterUp
-    ========================================================================== */
-    $('.counter').counterUp({
-      time: 500
-    });  
-    
-
-     /* Testimonials Carousel 
-    ========================================================*/
-    var owl = $("#testimonials");
-      owl.owlCarousel({
-        loop: true,
-        nav: false,
-        dots: true,
-        center: true,
-        margin: 15,
-        slideSpeed: 1000,
-        stopOnHover: true,
-        autoPlay: true,
-        responsiveClass: true,
-        responsiveRefreshRate: true,
-        responsive : {
-            0 : {
-                items: 1
-            },
-            768 : {
-                items: 2
-            },
-            960 : {
-                items: 3
-            },
-            1200 : {
-                items: 3
-            },
-            1920 : {
-                items: 3
-            }
-        }
-      });  
-      
-
-
-    /* Back Top Link active
-    ========================================================*/
-      var offset = 200;
-      var duration = 500;
-      $(window).scroll(function() {
-        if ($(this).scrollTop() > offset) {
-          $('.back-to-top').fadeIn(400);
+        // ================== show or hide the back-top-top button
+        var backToTo = document.querySelector(".scroll-top");
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            backToTo.style.display = "flex";
         } else {
-          $('.back-to-top').fadeOut(400);
+            backToTo.style.display = "none";
         }
-      });
+    };
 
-      $('.back-to-top').on('click',function(event) {
-        event.preventDefault();
-        $('html, body').animate({
-          scrollTop: 0
-        }, 600);
-        return false;
-      });
+    // ========== header-4  toggler-icon
+    let navbarToggler4 = document.querySelector(".header-4 .navbar-toggler");
+    var navbarCollapse4 = document.querySelector(".header-4 .navbar-collapse");
 
-  });      
+    navbarToggler4.addEventListener('click', function() {
+        navbarToggler4.classList.toggle("active");
+    })
 
-}(jQuery));
+	// WOW active
+    new WOW().init();
+
+})();
